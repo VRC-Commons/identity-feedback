@@ -1,0 +1,32 @@
+name: 一般使用问题
+description: 询问不涉及个人账号资料的一般使用方式。
+title: "[咨询] "
+labels: [question, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这里是公开交流区。账号申诉、封禁复核、身份核验、找回账号及私人日志不在这里处理。
+        请勿填写真实邮箱、账号 ID、IP、密码、验证码、Cookie、Token 或其他个人资料。
+  - type: textarea
+    id: question
+    attributes:
+      label: 你想了解什么
+      description: 使用一般场景或虚构示例说明，不描述个人账号详情。
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: 已经查阅或尝试的办法
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我确认这不是账号申诉、身份核验或安全漏洞报告。
+          required: true
+        - label: 我确认正文和附件不含个人信息或真实凭据，并理解内容将公开。
+          required: true

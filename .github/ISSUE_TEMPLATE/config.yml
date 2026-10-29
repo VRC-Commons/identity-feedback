@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全漏洞或隐私泄露（私密报告）
+    url: https://github.com/VRC-Commons/identity-feedback/security/advisories/new
+    about: 请使用私密报告入口，不要公开漏洞细节、账号资料或有效凭据。

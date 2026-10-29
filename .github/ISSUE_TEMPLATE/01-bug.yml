@@ -1,0 +1,80 @@
+name: 问题反馈
+description: 报告可复现的功能异常、错误提示或页面问题。
+title: "[问题] "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本 Issue 和附件会公开。请勿提交真实邮箱、账号 ID、IP、密码、验证码、Cookie、Token、Authorization、HAR 或完整日志；截图先脱敏。
+        安全漏洞、账号申诉和身份材料请使用私密渠道，不要在这里填写。
+  - type: dropdown
+    id: area
+    attributes:
+      label: 出现问题的功能
+      options:
+        - 登录与注册
+        - 资料与隐私
+        - 会话与账号安全
+        - 开发者应用
+        - 页面显示与移动端适配
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 使用页面名称说明操作，不要粘贴包含账号信息或 Token 的完整 URL。
+      placeholder: |
+        1. 打开哪个页面
+        2. 点击或输入什么（使用虚构数据）
+        3. 出现什么问题
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 可以填写不含个人信息的错误码或提示。
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 浏览器与设备
+      placeholder: 例如 Windows / Chrome，或 iPhone / Safari；可补充浏览器版本。
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 版本或大致发生时间
+      description: 知道版本号时填写；不知道可写“未知”。不要填写个人 IP 或精确活动记录。
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 是否容易复现
+      options: [每次都能复现, 偶尔出现, 只出现过一次, 不确定]
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 脱敏补充信息（可选）
+      description: 仅附已遮挡个人信息的截图；不要粘贴完整网络请求、日志或导出数据。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索相同问题。
+          required: true
+        - label: 我确认正文和附件不含个人信息、真实凭据或漏洞利用细节，并理解内容将公开。
+          required: true
