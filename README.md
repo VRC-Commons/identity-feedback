@@ -4,6 +4,8 @@
 
 请从 Issues 的 New issue 入口选择“问题反馈”“功能建议”或“一般使用问题”。提交前先搜索相同问题；补充信息时使用原有 Issue，避免重复提交。
 
+[提交反馈](https://github.com/VRC-Commons/identity-feedback/issues/new/choose) · [查看处理进度](https://github.com/orgs/VRC-Commons/projects/1)
+
 所有 Issue、评论和附件均公开。请勿上传真实邮箱、账号 ID、IP 地址、密码、验证码、Cookie、Token、Authorization、完整日志、HAR 或含个人资料的截图。截图请先遮挡个人信息。
 
 账号申诉、身份核验和找回账号需要私密处理，请通过产品明确提供的官方途径联系维护者，不要在公开 Issue 中提供身份材料。
